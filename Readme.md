@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Less Art](https://up.htmlacademy.ru/htmlcss/28/user/1210017).
-* Наставник: `Дмитрий Беллавин`.
+* Наставник: [Дмитрий Беллавин](https://up.htmlacademy.ru/htmlcss/28/user/226241).
 
 ---
 
