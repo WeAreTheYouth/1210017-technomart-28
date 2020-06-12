@@ -1,3 +1,408 @@
+/* Variables */
+
+:root {
+  --basic-background: #f1f5f7;
+  --white: #ffffff;
+  --basic-blue: #293449;
+  --basic-bluelight: #32425C;
+  --basic-nav: rgba(255, 255, 255, 0.5);
+  --basic-active-nav: #161d29;
+  --success: #5fbb2d;
+  --basic-green: #63a63e;
+  --basic-icon: rgba(255, 255, 255, 0.3);
+  --header-activate: #1d2739;
+  --basic-greylight: #c5c5c5;
+  --basic-red: #ee3643;
+  --basic-black: #000000;
+  --special-yellowlight: #ffd180;
+  --phone: #b7bfc8;
+  --error: #ba2732;
+  --discount: #a9a9a9;
+  --filter: #b5b5b5;
+ 
+  /* пока не используемые */
+ 
+  --basic-grey: #3d546f;
+  --special-yellow: #ffbf47;
+  --special-blue: #3bbce3;
+  --special-lilac: #dc91d8;
+  --special-greenlight: #8ed78f;
+  --warning: #ffbf47;
+  --error: #ba2732;
+  --greylight: #eaeaea;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  font-family: "cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--white);
+}
+
+.header-all {
+  background-color: var(--basic-background);
+}
+
+/* Header-Top */
+
+.header-top {
+  background-color: var(--basic-blue);
+}
+
+.header-top a{
+  color: var(--white);
+}
+
+.header-top a:hover,
+.header-top a:focus {
+  color: var(--white);
+  background-color: var(--basic-blue);
+}
+
+.header-top a:active {
+  color: var(--basic-nav);
+  background-color: var(--basic-active-nav);
+}
+
+.checkout {
+  background-color: var(--basic-green);
+}
+
+a.checkout:hover,
+a.checkout:focus {
+  color: var(--white);
+  background-color: var(--success);
+}
+
+a.checkout:active {
+  color: var(--basic-nav);
+  background-color: var(--basic-green);
+}
+
+.bookmarks-cart,
+.magnifier {
+  fill: var(--basic-icon);
+}
+
+.icon-phone {
+  fill: var(--basic-grey);
+}
+
+/* Header-Middle */
+
+.header-tehnomart-title {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: var(--basic-red);
+}
+
+.header-phone {
+  color: var(--basic-red);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  border: 7px solid var(--white);
+}
+
+.header-address{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-bluelight);
+}
+
+.user-navigation {
+  font-size: 21px;
+line-height: 21px;
+}
+
+.user-navigation a {
+  color: var(--basic-black);
+  background-color: var(--white);
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-red);
+  background-color: var(--white);
+}
+
+.user-navigation a:active {
+  color: var(--basic-greylight);
+  background-color: var(--white);
+}
+
+/* Header-Nav */
+
+.header-nav {
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-bluelight);
+  list-style: none;
+}
+
+.header-nav a{
+  color: var(--white);
+}
+
+.header-nav a:hover,
+.header-nav a:focus {
+  color: var(--white);
+  background-color: var(--basic-blue);
+}
+
+.header-nav a:active {
+  color: var(--basic-nav);
+  background-color: var(--header-activate);
+}
+
+/* about-and-contacts */
+
+.about-and-contacts {
+  color: var(--basic-black);
+}
+
+.tehnomart-company {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.about {
+font-family: PT Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 24px;
+}
+
+.transport-companies {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* footer */
+
+.footer-top-middle {
+  background-color: var(--basic-bluelight);
+}
+
+.footer-nav-top {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav-top a{
+  color: var(--basic-background);
+}
+
+.footer-nav-top a:hover,
+.footer-nav-top a:focus {
+  text-decoration: underline;
+}
+
+.footer-nav-top a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-nav-middle {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  list-style: none;
+}
+
+.footer-nav-middle a{
+  color: var(--special-yellowlight);
+}
+
+.footer-nav-middle a:hover,
+.footer-nav-middle a:focus {
+  text-decoration: underline;
+}
+
+.footer-nav-middle a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-end {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-blue);
+}
+
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.htmlacademy a{
+  color: var(--special-yellowlight);
+}
+
+.htmlacademy a:hover,
+.htmlacademy a:focus {
+  text-decoration: underline;
+}
+
+.htmlacademy a:active {
+  color: var(--basic-red);
+}
+
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.button:active {
+  background-color: var(--error);
+}
+
+/* modal */
+
+.modal {
+  color: var(--basic-black);
+}
+
+
+
+/*catalog*/
+
+.login {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.login a {
+  color: var(--basic-black);
+  background-color: var(--white);
+}
+
+.login a:active {
+  color: var(--basic-greylight);
+  background-color: var(--white);
+}
+
+
+.login-menu {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-bluelight);
+  background-color: var(--basic-background)
+}
+
+.login-menu a:hover,
+.login-menu a:focus {
+  color: var(--basic-red);
+  background-color: var(--basic-background);
+}
+
+.login-menu a:active {
+  color: var(--basic-greylight);
+  background-color: var(--basic-background);
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px; 
+  background-color: var(--basic-background);
+  color: var(--basic-bluelight);
+}
+
+.breadcrumbs {
+  color: var(--basic-black);
+  list-style: none;
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs a{
+  color: var(--basic-black);
+}
+
+/* Filters */
+
+
+.filter {
+  font-family: PT Sans;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 19px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--filter);
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3{
+  font-size: 18px;
+  line-height: 20px;
+  
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+
+.discount {
+  color: var(--discount);
+  font-size: 16px;
+  line-height: 18px; 
+  text-align: center;
+  text-decoration: line-through;
+}
+
+.catalog-item .button {
+  font-size: 16px;
+  line-height: 18px; 
+  color: var(--basic-white);
+}
+
+
 
 
 .visually-hidden {
@@ -18,12 +423,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-
-a:hover,
-a:focus {
-  background: #ffffff;
 }
 
 a:focus {
