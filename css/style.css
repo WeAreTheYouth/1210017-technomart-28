@@ -22,13 +22,16 @@
   --greylight: #eaeaea;
   --social-background: #212A3A;
   --popular-background: #f9f5f0;
-  /* пока не используемые */
- 
-  --basic-grey: #3d546f;
+  --filter-background: #f3f7ec;
   --special-yellow: #ffbf47;
   --special-blue: #3bbce3;
   --special-lilac: #dc91d8;
   --special-greenlight: #8ed78f;
+  --special-yellow2: #ffc047;
+
+  /* пока не используемые */
+ 
+  --basic-grey: #3d546f;
   --warning: #ffbf47;
   --error: #ba2732;
   
@@ -300,12 +303,63 @@ a.registration  {
   background-color: var(--header-activate);
 }
 
+/*Index catalog*/
 
 
+.index-catalog ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.materials {
+  background-color: var(--special-yellow);
+}
+
+.tool {
+  background-color: var(--special-blue);
+}
+
+.technique {
+  background-color: var(--special-lilac); 
+}
+
+.off50 {
+  background-color: var(--special-greenlight);   
+}
+
+.delivery {
+  background-color: var(--special-yellow2);   
+}
+
+.catalog-menu h3 {
+
+}
+
+/* slider */
+
+.site-wrapper {
+  min-width: 258px;
+  background-image: url("img/drill.jpg");
+}
 
 .service {
   background-color: var(--basic-background);
+}
+
+.popular-goods h2 {
+  display: flex;
+}
+
+.popular-goods h2 button {
+  color: var(--white);
+  width: 192px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: var(--basic-red);
+  margin-left: auto;
+  margin-right: 14px;
 }
 
 .popular-goods .container ul{
@@ -324,7 +378,35 @@ a.registration  {
   height: 90px;
 }
 
+.popular-manufacturers h2 button {
+  color: var(--white);
+  width: 192px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: var(--basic-red);
+  margin-left: auto;
+  margin-right: 14px;
+}
 
+.popular-manufacturers .container ul{
+  display: flex;
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-list li {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--greylight);
+}
 
 /* about-and-contacts */
 
@@ -673,18 +755,100 @@ justify-self: end;
   margin-bottom: 48px;
 }
 
+.filter-header {
+  height: 38px;
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+  background-color: var(--filter-background);
+}
+
+
+
 .filter {
   font-family: PT Sans;
   font-size: 15px;
   line-height: 19px;
   color: var(--basic-black);
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .filter fieldset {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 10px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--filter-background);
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--white);
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  font-family: PT Sans;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.price-controls input {
+  width: 95px;
+
+  text-align: center;
+  color: var(--basic-black);
+  border: none;
+  border-radius: 5px;
+  background: var(--filter-background);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .filter fieldset:first-child {
@@ -711,6 +875,13 @@ justify-self: end;
   padding: 0;
   margin: 0;
 }
+
+.range-filter {
+  width: 220px;
+  margin-bottom: 25px;
+}
+
+
 
 .filter-option {
   margin-bottom: 16px;
