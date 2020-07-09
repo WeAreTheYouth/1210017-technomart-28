@@ -44,7 +44,6 @@ body {
   min-width: 960px;
   font-family: "cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
   color: var(--basic-black);
   background-color: var(--white);
 }
@@ -108,7 +107,7 @@ a:focus {
 
 .btn {
   display: inline-block;
-  padding: 12px;
+  padding: 12px 0 12px 0;
   font-size: 14px;
   line-height: 1;
   text-align: center;
@@ -129,6 +128,7 @@ a:focus {
 }
 
 .btn-transparentize {
+  width: 135px;
   background-color: var(--bg-opacity);
 }
 
@@ -145,7 +145,7 @@ a:focus {
 
 .header-top {
   background-color: var(--basic-blue);
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .header-top .container {
@@ -280,7 +280,7 @@ a:focus {
 }
 
 .header-top-link-order {
-  padding: 10px 18px 8px 18px;
+  padding: 12px 18px 10px 18px;
   background-color: var(--basic-green);
 }
 
@@ -300,40 +300,52 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
 }
-
 
 .header-tehnomart-title {
   font-size: 16px;
-  line-height: 23px;
   font-style: italic;
   font-weight: normal;
+  line-height: 23px;
   color: var(--basic-red);
   margin: 0;
   padding: 0;
-
   width: 210px;
   margin-left: 30px;
 }
 
 .header-contacts {
   width: 270px;
+  position: relative;
 }
 
 .header-phone {
   color: var(--basic-red);
   font-weight: bold;
   font-size: 21px;
-  line-height: 30px;
   border: 3px solid var(--white);
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 0 20px 0 30px;
 }
+
+.header-phone::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  fill: red;
+}
+
+
 
 .header-address{
   font-size: 14px;
-  line-height: 24px;
   color: var(--basic-bluelight);
   margin: 0;
   padding: 0;
@@ -375,7 +387,8 @@ login-link {
 .login-link::before {
   content: "";
   position: absolute;
-
+  top: 5px;
+  left: 28px;
   width: 20px;
   height: 11px;
   background-image: url(../img/icon-login.svg);
@@ -405,25 +418,26 @@ a.registration  {
 /* Header-Nav */
 
 .header-nav {
-  margin: 0;
-  padding: 0;
-  background-color: var(--basic-bluelight);
-  list-style: none;
-  box-shadow:0 5px var(--basic-blue);
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
-
+  margin: 0;
+  padding-top: 22px;
+  padding-right: 30px;
+  padding-bottom: 18px;
+  padding-left: 30px;
+  background-color: var(--basic-bluelight);
+  list-style: none;
+  box-shadow:0 5px var(--basic-blue);
   margin-bottom: 60px;
-  height: 60px;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .header-nav a {
   color: var(--white);
   display: block;
-  padding: 18px 28px;
+  
 }
 
 .header-nav a:hover,
@@ -439,6 +453,10 @@ a.registration  {
 
 /*Index catalog*/
 
+.features {
+  margin-top: 39px;
+  margin-bottom: 59px;
+}
 
 .features-list {
   display: grid;
@@ -453,37 +471,44 @@ a.registration  {
 .features-item {
   color: var(--white);
   background-repeat: no-repeat;
-  background-position: right 10px center;
 }
 
 .features-item h3 {
-  padding-left: 23px;
+  margin: 0;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-left: 22px;
 }
 
 .features-item-materials {
   background-color: var(--special-yellow);
   background-image: url(../img/icon-1.svg);
   position: relative;
+  background-position: 213px 31px;
 }
 
 .features-item-tool {
   background-color: var(--special-blue);
   background-image: url(../img/icon-2.svg);
+  background-position: 194px 34px;
 }
 
 .features-item-technique {
   background-color: var(--special-lilac);
   background-image: url(../img/icon-3.svg);
+  background-position: 191px 31px;
 }
 
 .features-item-off50 {
   background-color: var(--special-greenlight);
   background-image: url(../img/icon-4.svg);
+  background-position: 196px 27px;
 }
 
 .features-item-delivery {
   background-color: var(--special-yellow2);
-  background-image: url(../img/icon-5.svg);   
+  background-image: url(../img/icon-5.svg);
+  background-position: 191px 32px;
 }
 
 .features-item-slider {
@@ -493,7 +518,8 @@ a.registration  {
 }
 
 .features-link {
-  margin-left: 23px;
+  margin-top: 15px;
+  margin-left: 22px;
 }
 
 .slider-list {
@@ -516,7 +542,7 @@ a.registration  {
 
 .slide p {
   margin: 0;
-  padding-top: 5px;
+  padding-top: 8px;
   padding-left: 24px;
 }
 
@@ -524,12 +550,13 @@ a.registration  {
   display: block;
 }
 
-.slide-title {
+.features-item-slider .slide-title {
   margin: 0;
   font-size: 36px;
   line-height: 36px;
   padding-top: 23px;
   padding-left: 24px;
+  text-transform: uppercase;
 }
 
 .slide-button {
@@ -566,7 +593,7 @@ a.registration  {
 
 .slide-arrow {
   position: absolute;
-  top: 50%;
+  top: 53%;
   width: 21px;
   height: 39px;
   transform: translateY(-50%);
@@ -577,12 +604,12 @@ a.registration  {
 }
 
 .slide-arrow-prev {
-  left: 21px;
+  left: 25px;
   background-image: url(../img/icon-left.svg);
 }
 
 .slide-arrow-next {
-  right: 21px;
+  right: 22px;
   background-image: url(../img/icon-right.svg);
 }
 
@@ -593,7 +620,7 @@ a.registration  {
 .home-page-title {
   display: flex;
   align-items: center;
-  padding: 25px 19px 26px 30px;
+  padding: 26px 20px 25px 28px;
   font-size: 30px;
   line-height: 1;
   font-weight: normal;
