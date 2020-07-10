@@ -1275,11 +1275,8 @@ justify-self: end;
   position: relative;
 }
 
-.catalog-item img {
-  
-}
-
 .catalog-item h3{
+  font-family: PT Sans;
   font-size: 18px;
   font-weight: bold;
   margin-top: 17px;
@@ -1294,15 +1291,13 @@ justify-self: end;
 }
 
 .catalog-item-image {
-  flex-basis: 100px;
-  margin: 0 auto;
-  margin-bottom: 33px;
+  margin: 38px 17px 24px 17px;
 }
 
 .catalog-item-image img {
   display: block;
-  margin-top: 0 auto; 
-  margin-bottom: ;
+  width: 100%;
+  
 }
 
 .catalog-item-price {
