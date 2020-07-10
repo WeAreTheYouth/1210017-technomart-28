@@ -767,56 +767,42 @@ pt sans
 /* footer */
 
 .footer-all {
- 
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .footer-top-middle {
   background-color: var(--basic-bluelight);
-
-  height: 193px;
 }
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   flex-wrap: wrap;
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+  justify-content: space-between;
 }
 
 .footer-logo {
-  display: flex;
-  width: 220px;
-  height: 63px;
-  background-color: var(--basic-red);
-  box-shadow:0 5px var(--error);
+  padding: 21px 41px 20px;
 }
 
-
 .footer-nav-top {
-  margin: 0;
-  list-style: none;
-
   display: flex;
-  justify-content: space-between;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  list-style: none;
 }
 
 .footer-nav-top a {
   color: var(--basic-background);
   display: block;
-  padding: 15px 50px;
 }
 
-.footer-nav-top a:last-child {
-  padding-right: 0;
+.footer-nav-top li {
+  margin-right: 59px;
 }
 
+.footer-nav-top li:last-child {
+  margin-right: 0;
+}
 
 .footer-nav-top a:hover,
 .footer-nav-top a:focus {
@@ -831,35 +817,38 @@ pt sans
 .footer-middle {
   display: flex;
   justify-content: space-between;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(100, 121, 0, 0.7);
+  margin-top: 29px;
 }
 
-.footer-middle p{
+.footer-middle p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  margin-left: 3px;
+  margin-bottom: 53px;
   color: var(--white);
 }
 
 .footer-nav-middle {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
   display: flex;
   justify-content: space-between;
-
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 255, 0.7);
+  margin: 0;
+  margin-top: 6px;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-nav-middle a{
   color: var(--special-yellowlight);
   display: block;
-  padding: 15px 50px;
 }
 
-.footer-nav-middle a:last-child{
-  padding-right: 0;
+.footer-nav-middle li {
+  margin-right: 59px;
+}
+
+.footer-nav-middle li:last-child{
+  margin-right: 0px;
 }
 
 .footer-nav-middle a:hover,
@@ -874,11 +863,8 @@ pt sans
 
 .footer-end {
   font-size: 16px;
-  line-height: 18px;
   color: var(--white);
   background-color: var(--basic-blue);
-
-  height: 107px;
 }
 
 .footer-end .container {
@@ -886,17 +872,21 @@ pt sans
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.footer-copyright {
+  min-width: 225px;
+  margin-top: 36px;
+  margin-bottom: 35px;
+}
+
 .footer-social {
-  width: 145px;
-  justify-self: center;
-  text-align: center;
+  margin-left: 164px;
 }
 
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 141px;
+  width: 132px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -906,11 +896,12 @@ pt sans
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 43px;
-  height: 43px;
+  width: 42px;
+  height: 42px;
   background-color: var(--social-background);
   border-radius: 30px;
   color: inherit;
+  margin-top: 36px;
 }
 
 .social-button:hover,
@@ -918,21 +909,32 @@ pt sans
   background-color: var(--basic-red);
 }
 
-.htmlacademy {
-justify-self: end;
+.htmlacademy-mail {
+  margin-top: 36px;
+  margin-left: 120px;
 }
 
-.htmlacademy a{
+.htmlacademy {
+  margin-top: 36px;
+  margin-left: 52px;
+}
+
+.htmlacademy a,
+.htmlacademy-mail a {
   color: var(--special-yellowlight);
 }
 
 .htmlacademy a:hover,
-.htmlacademy a:focus {
+.htmlacademy a:focus,
+.htmlacademy-mail a:hover,
+.htmlacademy-mail a:focus {
   text-decoration: underline;
 }
 
-.htmlacademy a:active {
+.htmlacademy a:active,
+.htmlacademy-mail a:active {
   color: var(--basic-red);
+  text-decoration: none;
 }
 
 /* modal */
@@ -1303,8 +1305,14 @@ justify-self: end;
 .catalog-item-price {
   color: var(--white);
   width: 154px;
-  padding: 7px;
-  margin: 0 auto;
+  padding-top: 12px;
+  padding-left: 3px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
   background-position: center;
