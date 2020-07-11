@@ -642,6 +642,10 @@ login-link {
   background-color: var(--popular-background);
 }
 
+.popular-goods {
+  margin-bottom: 70px;
+}
+
 .home-page-title-link   {
   width: 192px;
   margin-left: auto;
@@ -713,12 +717,16 @@ login-link {
 /* about-and-contacts */
 
 .about-and-contacts {
+  margin-bottom: 70px;
   color: var(--basic-black);
+}
 
+.about-and-contacts .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
 }
+
+
 
 .tehnomart-company {
   font-size: 30px;
@@ -742,26 +750,35 @@ line-height: 24px;
 }
 
 .about-left {
-  width: 480px;
 }
 
 .about-right {
-  width: 320px;
 }
 
 
 
 .about-hammer-drill {
   background-color: var(--basic-background);  
-  height: 260px;
 }
 
-cuprum
-30
-30
-pt sans
-13
-24
+.about-hammer-drill h2 {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 63px;
+}
+
+.about-hammer-drill p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 70px;
+}
+
+
 
 
 /* footer */
@@ -1252,7 +1269,7 @@ pt sans
 .catalog-list {
   display: grid;
   grid-template-columns: 220px 220px 220px;
-  gap: 20px 18px;
+  gap: 18px 20px;
   padding: 0;
   margin: 0;
   margin-bottom: 48px;
@@ -1265,25 +1282,23 @@ pt sans
 }
 
 .catalog-item {
-  border: 1px solid var(--greylight);
-
   display: flex;
-  justify-content: space-between;
   align-content: center;
   flex-direction: column;
-  
+  border: 1px solid var(--greylight);
   color: var(--basic-black);
   text-align: center;
   position: relative;
+  min-height: 316px;
 }
 
-.catalog-item h3{
+.catalog-item h3 {
   font-family: PT Sans;
   font-size: 18px;
   font-weight: bold;
   margin-top: 17px;
   margin-right: 30px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   margin-left: 30px;
   text-align: center;
 }
@@ -1299,20 +1314,20 @@ pt sans
 .catalog-item-image img {
   display: block;
   width: 100%;
-  
 }
 
 .catalog-item-price {
+  font-family: PT Sans;
+  font-size: 17px;
+  font-weight: bold;
   color: var(--white);
   width: 154px;
   padding-top: 12px;
-  padding-left: 3px;
-  padding-right: 5px;
-  padding-bottom: 7px;
+  padding-right: 17px;
+  padding-bottom: 8px;
   margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
+  margin-left: 39px;
+  margin-bottom: 20px;
   background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1320,15 +1335,16 @@ pt sans
   background-color: transparent;
   border: 0;
   line-height: inherit;
-  font-size: 17px;
-  font-weight: bold;
   outline: none;
 }
 
 .catalog-item-discount {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 5px;
   color: var(--discount);
-  font-size: 16px;
-  line-height: 18px; 
 }
 
 .catalog-item .button {
