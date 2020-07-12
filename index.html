@@ -258,11 +258,42 @@
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <ul class="service-list">
-          <li class="service-delivery-item">Доставка</li>
-          <li class="service-garanty-item">Гарантия</li>
-          <li class="service-credit-item">Кредит</li>
-        </ul>
+        <input type="radio" class="visually-hidden service-slider-input service-slider-input-delivery" id="service-slider-toggle-1" checked>
+        <input type="radio" class="visually-hidden service-slider-input service-slider-input-garanty" id="service-slider-toggle-2">
+        <input type="radio" class="visually-hidden service-slider-input service-slider-input-credit" id="service-slider-toggle-3">
+        <div class="service-wrapper">
+          <div class="service-toggle-list">
+            <label for="service-slider-toggle-1" class="service-slider-label service-slider-label-delivery">Доставка</label>
+            <label for="service-slider-toggle-2" class="service-slider-label service-slider-label-garanty">Гарантия</label>
+            <label for="service-slider-toggle-3" class="service-slider-label service-slider-label-credit">Кредит</label>
+          </div> 
+          <ul class="service-list">
+            <li class="service-item service-item-delivery">
+              <h3 class="service-item-title">
+                Доставка
+              </h3>
+              <p class="service-item-description">
+
+              </p>  
+            </li>
+            <li class="service-item service-item-garanty">
+              <h3 class="service-item-title">
+                Гарантия
+              </h3>
+              <p class="service-item-description">
+
+              </p>
+            </li>
+            <li class="service-item service-item-credit">
+              <h3 class="service-item-title">
+                Кредит
+              </h3>
+              <p class="service-item-description">
+
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>  
     </div>
 
