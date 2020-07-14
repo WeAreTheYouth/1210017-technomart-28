@@ -25,7 +25,7 @@
             Закладки: 0
           </a>
           <a class="header-top-link header-top-link-cart header-top-link-cart-notempty" href="blank.html">
-            Корзина: 10
+            Корзина: 0
           </a>
           <a class="header-top-link header-top-link-order" href="blank.html">Оформить заказ</a>
         </div> 
@@ -37,17 +37,20 @@
         </h1>
         <div class="header-contacts">
           <div class="header-phone">
-            <p class="header-phone-number">
+            <a href="tel:+78125550555" class="header-phone-number">
               +7 (812) 555-05-55
-            </p>
+            </a>
           </div>
           <p class="header-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
 
-        <p class="user-">         
-          <a href="login.html" class="login-link">Войти</a>
+        <p class="user-navigation">         
+          <a href="login.html" class="login-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+            Войти
+          </a>
           <a href="blank.html" class="registration">Регистрация</a>
         </p>
       </div>  
@@ -89,11 +92,11 @@
   
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <div>
-        <p class="filter-header">Фильтр:</p>
-      </div>
-      <form  class="filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="filter-item">
+      
+      <p class="filter-header">Фильтр:</p>
+      
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-price">
           <legend>Цена:</legend>
           <div class="range-filter">
             <div class="range-controls">
@@ -110,7 +113,8 @@
             </div>
           </div>
         </fieldset>
-        <fieldset>
+        <hr class="border">
+        <fieldset class="filter-manufacturers">
           <legend>Производители:</legend>
           <ul>
             <li class="filter-option filter-checkbox">
@@ -135,6 +139,7 @@
             </li>
           </ul>
         </fieldset>
+        <hr class="border">
         <fieldset>
           <legend>Питание:</legend>
           <ul>
@@ -156,10 +161,29 @@
     <div> 
        
       <section class="catalog">
-       <h2 class="visually-hidden">Список оборудования</h2>
-       <div>
-        Сортировка
-       </div> 
+        <h2 class="visually-hidden">Список оборудования</h2>
+        <div class="catalog-sorting">
+          <p class="sorting">
+            Сортировка
+          </p>
+          <ul>
+            <li>
+              <a>По цене</a>
+            </li>
+            <li>
+              <a>По типу</a>
+            </li>
+            <li>
+              <a>По функционалу</a>
+            </li>
+            <li>
+              <a><a>
+            </li>
+            <li>
+              <a><a>
+            </li>
+          </ul>  
+        </div> 
         <ul class="catalog-list">
           <li class="catalog-item">
               <p class="catalog-item-image">
@@ -200,7 +224,10 @@
               <img  src="img/new.svg" width="70" height="60" alt="new">
             </p>  
             <div class="catalog-modal">
-              <a href="#" class="catalog-btn catalog-modal-order">Купить</a>
+              <a href="#" class="catalog-btn catalog-modal-order">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                Купить
+              </a>
               <a href="#" class="catalog-btn catalog-modal-bookmark">В закладки</a>  
             </div>
           </li>
@@ -273,17 +300,32 @@
           <button class="catalog-item-price" type="button">15500 Р.</button>
           </li>
         </ul>
+        <ul class="pagination">
+          <li class="pagination-list">
+            <a href="#">
+              1
+            </a>
+          </li>
+          <li class="pagination-list">
+            <a href="#">
+              2
+            </a>
+          </li>
+          <li class="pagination-list">
+            <a href="#">
+              3
+            </a>
+          </li>
+          <li class="pagination-list pagnation-list-next">
+            <a href="#">
+              Следующая
+            </a>
+          </li>
+        </ul>  
       </section>
 
     </div>  
-    <div class="pagination">
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>Следующая</li>
-      </ul>  
-    </div>  
+    
    </div>
     <div class="about-hammer-drill">
       <div class="container"> 
@@ -376,11 +418,12 @@
       <span class="tick"></span>
       <h2>Товар добавлен в корзину!</h2>
     </div>
+    <button class="close-modal" type="button" aria-label="Закрыть"></button>
     <div class="btn-modal-cart">
-      <button class="btn" type="button">Оформить заказ</button>
+      <button class="btn close" type="button">Оформить заказ</button>
       <button class="btn proceed" type="button">Продолжить покупки</button>
     </div>
-    <button class="close-modal" type="button" aria-label="Закрыть"></button>
+    
   </div>
 
   </body>

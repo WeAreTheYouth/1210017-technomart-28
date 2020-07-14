@@ -47,7 +47,10 @@
         </div>
 
         <p class="user-navigation">         
-          <a href="login.html" class="login-link">Войти</a>
+          <a href="login.html" class="login-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+            Войти
+          </a>
           <a href="blank.html" class="registration">Регистрация</a>
         </p>
       </div>  
@@ -258,9 +261,9 @@
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <input type="radio" class="visually-hidden service-slider-input service-slider-input-delivery" id="service-slider-toggle-1" checked>
-        <input type="radio" class="visually-hidden service-slider-input service-slider-input-garanty" id="service-slider-toggle-2">
-        <input type="radio" class="visually-hidden service-slider-input service-slider-input-credit" id="service-slider-toggle-3">
+        <input type="radio" name="service-slider-toggle" class="visually-hidden service-slider-input service-slider-input-delivery" id="service-slider-toggle-1" checked>
+        <input type="radio" name="service-slider-toggle" class="visually-hidden service-slider-input service-slider-input-garanty" id="service-slider-toggle-2">
+        <input type="radio" name="service-slider-toggle" class="visually-hidden service-slider-input service-slider-input-credit" id="service-slider-toggle-3">
         <div class="service-wrapper">
           <div class="service-toggle-list">
             <label for="service-slider-toggle-1" class="service-slider-label service-slider-label-delivery">Доставка</label>
@@ -269,26 +272,33 @@
           </div> 
           <ul class="service-list">
             <li class="service-item service-item-delivery">
-              <h3 class="service-item-title">
+              <h3 class="service-item-title service-item-title-delivery">
                 Доставка
               </h3>
-              <p class="service-item-description">
-
+              <p class="service-item-description service-item-description-delivery">
+                Мы с удовольствием доставим ваш товар прямо<br> 
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
               </p>  
             </li>
             <li class="service-item service-item-garanty">
-              <h3 class="service-item-title">
+              <h3 class="service-item-title service-item-title-garanty">
                 Гарантия
               </h3>
-              <p class="service-item-description">
-
+              <p class="service-item-description service-item-description-garanty">
+                Если купленный у нас товар поломается или заискрит,<br>
+                 а также в случае пожара, спровоцированного его<br>
+                возгоранием, вы всегда можете быть уверены в нашей<br> 
+                гарантии. Мы обменяем сгоревший товар на новый.<br>
+                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
             <li class="service-item service-item-credit">
-              <h3 class="service-item-title">
+              <h3 class="service-item-title service-item-title-credit">
                 Кредит
               </h3>
-              <p class="service-item-description">
+              <p class="service-item-description service-item-description-credit">
 
               </p>
             </li>
